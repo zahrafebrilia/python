@@ -1,0 +1,24 @@
+bool prima (int x){
+    if (x==2){
+    return true;
+
+    for (int i = 2;i<x;i++){
+        if (x%i == 0)
+        {
+            return false;
+        }
+        }
+        return true;
+
+}
+
+int main (){
+    int length; // batas deret
+    scanf ("%d", &length);
+    for (int i =2;i<=length;i++){
+        if (prima(i)){
+            printf ("%d\n", i);
+        }
+    }
+
+}
